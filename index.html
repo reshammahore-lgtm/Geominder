@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geominder - Location Reminders</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>📍 Geominder</h1>
+    <p>Location-based reminder prototype</p>
+  </header>
+
+  <section class="card">
+    <h2>Create a Reminder</h2>
+    <input id="task" placeholder="Reminder (e.g. Buy groceries)" />
+    <input id="place" placeholder="Location (e.g. College)" />
+    <button onclick="addReminder()">Add Reminder</button>
+    <button class="secondary" onclick="getLocation()">Get My Current Location</button>
+    <p id="location">Location not detected</p>
+  </section>
+
+  <section class="card">
+    <h2>My Reminders</h2>
+    <div id="reminders"></div>
+  </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
